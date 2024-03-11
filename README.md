@@ -2,6 +2,10 @@
 This is a repository for an automatic guitar tuner project. 
 This project utilizes the Adafruit Feather RP2040 with CircuitPython.
 
+## Demo
+
+[![Demo](https://img.youtube.com/vi/emY8-uXGGco/0.jpg)](https://www.youtube.com/watch?v=emY8-uXGGco)
+
 ## Hardware Setup
 1. Using the hooks and rubber bands, secure the device on the head of the guitar. Ensure that the tuning pegs are aligned within the tuning attachment that is connected to the servo motor.
 2. Using the clip on attachment, clip the piezo sensor on the edge of the guitar's head.
@@ -30,7 +34,3 @@ All of the servo motors are screwed into a 3D printed case, which properly align
 3. As the program runs, it will first measure the frequency and compare it against the target frequency. When it's too low or too high, the LCD will notify the user and the motors will turn either left or right, moving the tuning peg. The user will also be prompted to strum the guitar string again.
 4. While the program runs, the user also has the option to restart the program and select a different string to tune. The program restarts by pressing the rightmost button at any point after the program has initiated.
 5. If the measured frequency is correct, then the tuning is completed and the program restarts. Otherwise, repeat step 3 until the desired frequency value is measured.
-
-## Demo
-
-[![Demo](https://img.youtube.com/vi/emY8-uXGGco/0.jpg)](https://www.youtube.com/watch?v=emY8-uXGGco)
